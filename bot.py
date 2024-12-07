@@ -24,7 +24,7 @@ async def start_handler(message: types.Message):
     """
     Start komandasi foydalanuvchiga bot haqida ma'lumot beradi.
     """
-    await message.answer("Assalomu alaykum! 🎬\nKino kodini kiriting va bot sizga tegishli kinoni topib beradi.")
+    await message.answer("Assalomu alaykum! \n🎬Kino kodini kiriting va bot sizga \ntegishli kinoni topib beradi.")
 
 
 @router.message()
@@ -70,3 +70,6 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
+
+
