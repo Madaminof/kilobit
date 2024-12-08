@@ -1,7 +1,15 @@
-BOT_TOKEN = "7834159361:AAH1-ih1gVthnDpV4dYdRXLWm6KOqufltHc"
-CHANNEL_ID = "@kinotopbot01"  # Kanalingiz ID'si
-DB_HOST = "localhost"
-DB_NAME = "kino_bot"
-DB_USER = "postgres"
-DB_PASSWORD = "Samandar2004"
-DB_PORT = 5432
+from dotenv import load_dotenv
+import os
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Access variables
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
+DB_HOST = os.getenv("DB_HOST")
+DB_NAME = os.getenv("DB_NAME")
+DB_USER = os.getenv("DB_USER")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_PORT = os.getenv("DB_PORT")
+
